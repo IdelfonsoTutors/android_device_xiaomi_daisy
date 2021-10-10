@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_daisy.mk
-
-COMMON_LUNCH_CHOICES := \
-    arrow_daisy-user \
-    arrow_daisy-userdebug \
-    arrow_daisy-eng
+    $(LOCAL_DIR)/dot_daisy.mk
