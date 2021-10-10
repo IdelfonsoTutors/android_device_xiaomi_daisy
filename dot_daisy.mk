@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit some prebuilts
 $(call inherit-product, vendor/custom/prebuilts/config.mk) 
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := arrow_daisy
+PRODUCT_NAME := dot_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -42,9 +42,6 @@ TARGET_VENDOR_DEVICE_NAME := daisy
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="daisy" \
     PRODUCT_NAME="daisy"
-
-# Arrow maintainer
-DEVICE_MAINTAINER := acras
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
